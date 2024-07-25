@@ -60,7 +60,7 @@ const Loader = () => {
     return (
         <>
             <MotionConfig
-                transition={{ duration: 1.2, ease: 'anticipate' }}
+                transition={{ duration: 1.5, ease: 'anticipate' }}
             >
                 <motion.div
                     animate={btnClick ? "open" : "closed"}
@@ -74,7 +74,7 @@ const Loader = () => {
                         }
                     }}
                     className="w-full h-screen bg-[#111] fixed bottom-0 left-[50%] -translate-x-[50%] z-50">
-                    <div className="relative flex w-full h-full max-w-screen-xl mx-auto text-center">
+                    <div className="relative flex w-full h-full text-center">
                         <MotionConfig>
                             <div className="w-[50vw] h-[70vh] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                 <div className="loader-container w-full h-full flex items-center flex-col gap-10 justify-center">
@@ -85,7 +85,7 @@ const Loader = () => {
                                                 className="circle" cx="62" cy="62" r="59" fill="none" stroke="#ffff" strokeWidth="1px" stroke-linecap="round" />
                                         </svg>
                                         <div className="loader-prog absolute top-[10%] left-[50%] -translate-x-[50%] -translate-y-[10%]">
-                                            <h1 className='text-white text-[1vw] opacity-0'>0%</h1>
+                                            <h1 className='text-white lg:text-[1vw] opacity-0'>0%</h1>
                                         </div>
                                         <div className="loader-text absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[10%]">
                                             <div className="loading vido size-16 rounded-[24%] ">
@@ -100,7 +100,6 @@ const Loader = () => {
                                     </button>
                                 </div>
                             </div>
-
                         </MotionConfig>
                     </div>
                 </motion.div>

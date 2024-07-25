@@ -24,7 +24,7 @@ const App = () => {
   lenisFn();
   return (
     <div className=' overflow-x-hidden'>
-        {/* <Loader /> */}
+        <Loader />
         <Navbar/>
         <Home/>
         <Canvas/>
